@@ -19,8 +19,7 @@ The rules that it uses are fairly simple:
 Think of the "left brain hemisphere" as the analytical, strong tactical part (e.g. Stockfish) 
 and the "right brain hemisphere"  as the synthetical, strong strategical part (e.g. Lc0)
 
-Just now i stumbled over this:
-[Adviser](https://github.com/dkappe/leela-chess-weights/wiki/Real-Time-Blunder-Checking)
+Just now i stumbled over this: [Adviser](https://github.com/dkappe/leela-chess-weights/wiki/Real-Time-Blunder-Checking)
 
 This "adviser" attempt by D. Kappe led to the following conclusions:
 
