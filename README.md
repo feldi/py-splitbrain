@@ -1,4 +1,4 @@
-# py-splitrain
+# py-splitbrain
 An UCI "chess engine" that combines the power of NN (neural net) and AB (alpha beta) engines.
 
 The code borrows heavily from the project [CombiChess](https://github.com/tom0334/CombiChess).
