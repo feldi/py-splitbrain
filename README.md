@@ -19,6 +19,25 @@ The rules that it uses are fairly simple:
 Think of the "left brain hemisphere" as the analytical, strong tactical part (e.g. Stockfish) 
 and the "right brain hemisphere"  as the synthetical, strong strategical part (e.g. Lc0)
 
+Just now i stumbled over this:
+[Adviser](https://github.com/dkappe/leela-chess-weights/wiki/Real-Time-Blunder-Checking)
+
+This "adviser" attempt by D. Kappe led to the following conclusions:
+
+ * Leela really doesn't blunder that often.
+ * Too small of a window, and you kill Leela's style. Too big, and you might not catch blunders.
+ * How can an AB engine distinguish between a blunder and a patented Leela positional sacrifice?
+ * Without using AB data in the MCTS, having an AB engine blundercheck Leela is of limited use.
+ * You can't just use any old engine to provide advice on tactical blunders. It will try to give advice on any position that moves the needle, not just on ones with material loss. So the strength of the engine is crucial.
+ * The adviser had a small but noticeable positive effect, with a few exception.
+ * An 80 cp window was most positive: Sf9 at 80 cp made the most difference   
+
+My considerations:
+
+ * Regarding the fifth point, I use the strongest Stockfish available.
+ * The third point is still open and crucial and under my investogation.
+
+
 ## Using SplitBrainChess
 To use SplitBrainChess, clone the project or download it as a zip. Unzip it if needed, and then place the engines you want to use in the engines folder. Open SplitBrainLauncher.py and change the filenames to the ones in the engines folder you want to use.
 
